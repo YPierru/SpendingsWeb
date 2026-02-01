@@ -2,12 +2,13 @@
 
 Personal finance and spending tracking web application built with React, TypeScript, and Vite.
 
-## Current Status: Phase 1 - CSV Loading Infrastructure
+## Current Status: Phase 2 - Data Visualizations ✅
 
-This project is currently in Phase 1, focusing on the foundational CSV loading and data processing infrastructure.
+The application now includes comprehensive data visualizations using interactive charts.
 
-## Features (Phase 1)
+## Features
 
+### Phase 1: CSV Loading Infrastructure ✅
 - ✅ CSV file parsing with French format support (semicolon delimiter, DD/MM/YYYY dates)
 - ✅ Data validation and error reporting
 - ✅ LocalStorage persistence
@@ -18,6 +19,18 @@ This project is currently in Phase 1, focusing on the foundational CSV loading a
   - Income vs. Expenses
   - Total amounts
 
+### Phase 2: Data Visualizations ✅
+- ✅ **Interactive Charts** using Recharts
+  - Daily time series (line chart) showing income vs expenses trends
+  - Category pie chart for spending distribution
+  - Category bar chart for easy comparison
+  - Monthly bar chart for trend analysis
+  - Overall income vs expenses summary
+- ✅ **Category Details Table** with transaction counts and averages
+- ✅ **Responsive Design** - all charts adapt to screen size
+- ✅ **Interactive Tooltips** with formatted currency
+- ✅ **Color-Coded Visualizations** for quick insights
+
 ## Tech Stack
 
 - **Frontend Framework**: React 19
@@ -25,7 +38,7 @@ This project is currently in Phase 1, focusing on the foundational CSV loading a
 - **Build Tool**: Vite 7
 - **Styling**: Tailwind CSS 4
 - **CSV Parsing**: PapaParse
-- **Charts**: Recharts (ready for Phase 2)
+- **Charts**: Recharts 3.7 (interactive visualizations)
 
 ## Project Structure
 
@@ -149,9 +162,18 @@ The application provides detailed error messages for:
 
 ## Next Steps (Future Phases)
 
-- Phase 2: Basic visualizations (charts and graphs)
-- Phase 3: Filtering and search capabilities
-- Phase 4: Advanced analytics and insights
+- ✅ ~~Phase 1: CSV Loading Infrastructure~~ - **Complete**
+- ✅ ~~Phase 2: Basic visualizations (charts and graphs)~~ - **Complete**
+- 🔄 Phase 3: Filtering and search capabilities
+  - Date range picker
+  - Category filter
+  - Search by label
+  - Amount range filter
+- 📋 Phase 4: Advanced analytics and insights
+  - Budget tracking
+  - Recurring expense detection
+  - Year-over-year comparisons
+  - Export functionality
 
 ## License
 

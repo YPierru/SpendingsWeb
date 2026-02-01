@@ -1,6 +1,7 @@
 import { useExpenses } from './context/ExpenseContext';
 import { CSVLoader } from './components/data/CSVLoader';
 import { DataSummary } from './components/data/DataSummary';
+import { Dashboard } from './components/Dashboard';
 
 function App() {
   const { expenses, loading, errors, summary, loadFromCSV, clearData } = useExpenses();
@@ -71,6 +72,7 @@ function App() {
         {hasData && summary && (
           <div className="space-y-6">
             <DataSummary summary={summary} onClearData={clearData} />
+            <Dashboard expenses={expenses} />
             {errors.length > 0 && (
               <CSVLoader onLoadCSV={loadFromCSV} loading={loading} errors={errors} />
             )}
@@ -81,7 +83,7 @@ function App() {
       <footer className="bg-white border-t border-gray-200 mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <p className="text-center text-sm text-gray-500">
-            SpendingsWeb - Phase 1: CSV Loading Infrastructure
+            SpendingsWeb - Phase 2: Data Visualizations
           </p>
         </div>
       </footer>
