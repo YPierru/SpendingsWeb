@@ -46,7 +46,9 @@ export function ExpenseProvider({ children }: ExpenseProviderProps) {
     setErrors([]);
 
     try {
-      const result = await parseCSVFile('/data/Spendings Export.csv');
+      // Use 'sample-data.csv' for demo, or replace with your own CSV file
+      // e.g., '/data/Spendings Export.csv' for your personal data
+      const result = await parseCSVFile('/data/sample-data.csv');
 
       setExpenses(result.data);
       setErrors(result.errors);

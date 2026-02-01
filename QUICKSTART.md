@@ -59,8 +59,13 @@ npx tsc --noEmit
 
 ## Using Your Own Data
 
+The app includes `sample-data.csv` for demonstration. To use your own data:
+
 1. Place your CSV file in `public/data/`
-2. Update the file path in `src/context/ExpenseContext.tsx` (line 49)
+2. Update the file path in `src/context/ExpenseContext.tsx` (line 51):
+   ```typescript
+   const result = await parseCSVFile('/data/YOUR_FILENAME.csv');
+   ```
 3. Ensure your CSV follows this format:
 
 ```csv

@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Personal data - keep your real spending data private
+Spendings Export.csv
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

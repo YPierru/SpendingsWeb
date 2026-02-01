@@ -120,11 +120,22 @@ The following categories are supported (from the sample data):
 
 ## Usage
 
-1. Place your CSV file in the `public/data/` folder (currently contains `Spendings Export.csv`)
+### Using the Demo Data
+
+1. The app comes with sample data in `public/data/sample-data.csv`
 2. Click "Load CSV Data" button in the application
 3. View the data summary with statistics and category breakdown
 4. Data is automatically saved to LocalStorage for persistence
 5. Use "Clear Data" to remove all data and start fresh
+
+### Using Your Own Data
+
+1. Place your CSV file in the `public/data/` folder (e.g., `Spendings Export.csv`)
+2. Update the file path in `src/context/ExpenseContext.tsx` (line 51):
+   ```typescript
+   const result = await parseCSVFile('/data/YOUR_FILENAME.csv');
+   ```
+3. Your personal CSV files are automatically ignored by git (add them to `.gitignore` if needed)
 
 ## Error Handling
 
